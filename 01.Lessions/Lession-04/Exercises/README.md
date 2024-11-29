@@ -1,0 +1,1 @@
+# Buổi 2: Khai báo biến và kiểu dữ liệu
