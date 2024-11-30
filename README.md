@@ -132,6 +132,14 @@
    - Sử dụng vòng lặp `for...in` để duyệt qua các thuộc tính.  
    - Sử dụng `Object.keys`, `Object.values`, và `Object.entries` để thao tác.  
 
+5. **Kiểu dữ liệu thời gian `Date`** 
+
+6. **JSON trong TypeScript và Node.js**  
+   - **JSON là gì?**: Định dạng, cấu trúc, và cách sử dụng.  
+   - **Chuyển đổi giữa JSON và object:**  
+     - `JSON.stringify` (chuyển object sang chuỗi JSON).  
+     - `JSON.parse` (chuyển chuỗi JSON sang object).  
+   - Đọc và ghi dữ liệu JSON vào file.  
 
 ---
 ## Buổi 7: Functions và Modules
@@ -163,23 +171,18 @@
 
 
 ---
+
 ## Buổi 8: JSON và Error handling
 
 **Mục tiêu:** Làm quen với cách làm việc với JSON trong TypeScript và Node.js, đồng thời xử lý lỗi hiệu quả trong ứng dụng.  
 
-1. **JSON trong TypeScript và Node.js**  
-   - **JSON là gì?**: Định dạng, cấu trúc, và cách sử dụng.  
-   - **Chuyển đổi giữa JSON và object:**  
-     - `JSON.stringify` (chuyển object sang chuỗi JSON).  
-     - `JSON.parse` (chuyển chuỗi JSON sang object).  
-   - Đọc và ghi dữ liệu JSON vào file.  
-
-2. **Error Handling trong TypeScript**  
+1. **Error Handling trong TypeScript**  
    - **Các loại lỗi phổ biến:**  
      - Lỗi cú pháp, lỗi runtime, lỗi logic.  
    - **Sử dụng `try...catch` và `finally`:**  
      - Phát hiện và xử lý lỗi trong runtime.  
    - **Tạo và ném lỗi (`throw`):**  
      - Cách tự định nghĩa lỗi.  
-   - **Kết hợp với Promise và Async/Await:**  
-     - Xử lý lỗi trong các hàm bất đồng bộ.  
+2. **Promise và Async/Await:**  
+   - Xử lý bất đồng bộ.  
+   - Xử lý lỗi trong các hàm bất đồng bộ.  
