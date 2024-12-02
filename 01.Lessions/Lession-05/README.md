@@ -4,12 +4,14 @@
 **Mục tiêu:** Hiểu cách làm việc với mảng và tuples, đồng thời sử dụng các vòng lặp để xử lý dữ liệu.
 
 
-##  **Dữ liệu kiểu mảng** 
+## 💛 **Dữ liệu kiểu mảng** 
 
-### **Khái niệm**
+### 🔥**Khái niệm**
 Mảng (Array) trong JavaScript là một đối tượng đặc biệt dùng để lưu trữ và quản lý một danh sách các phần tử. Mỗi phần tử có thể là một giá trị thuộc bất kỳ kiểu dữ liệu nào như số, chuỗi, đối tượng, hoặc thậm chí là một mảng khác (mảng lồng nhau).
 
-### **Đặc điểm của mảng trong JavaScript**
+!['array'](img/array.png)
+
+### 🔥**Đặc điểm của mảng trong JavaScript**
 1. **Định chỉ số (index-based):**
    - Các phần tử trong mảng được truy cập thông qua chỉ số, bắt đầu từ `0`.
    - Ví dụ: Trong mảng `const arr = [10, 20, 30];`, `arr[0]` là `10`.
@@ -17,6 +19,7 @@ Mảng (Array) trong JavaScript là một đối tượng đặc biệt dùng đ
 2. **Hỗ trợ kiểu dữ liệu hỗn hợp:**
    - Một mảng có thể chứa các giá trị thuộc nhiều kiểu dữ liệu khác nhau.
    - Ví dụ: `const mixedArray = [1, "Hello", true, { key: "value" }];`.
+   - Mảng như thế này trong Typescript gọi là `Tuple`
 
 3. **Độ dài động:**
    - Mảng trong JavaScript không cần định trước kích thước. Bạn có thể thêm hoặc xóa phần tử một cách linh hoạt.
@@ -24,11 +27,11 @@ Mảng (Array) trong JavaScript là một đối tượng đặc biệt dùng đ
 4. **Là một đối tượng:**
    - Mặc dù mảng trông giống như một danh sách các giá trị, thực chất nó là một đối tượng có các thuộc tính và phương thức để thao tác.
 
-### **Khi nào sử dụng mảng**
+### 🔥**Khi nào sử dụng mảng**
 - Khi cần lưu trữ một tập hợp các giá trị mà có thể truy cập thông qua chỉ số.
 - Khi cần thực hiện các thao tác như duyệt, tìm kiếm, thêm, xóa, hoặc biến đổi trên một danh sách các giá trị.
 
-### **Ví dụ về khai báo mảng**
+### 🔥**Ví dụ về khai báo mảng**
 1. **Tạo mảng rỗng:**
    ```javascript
    const emptyArray = [];
@@ -41,19 +44,13 @@ Mảng (Array) trong JavaScript là một đối tượng đặc biệt dùng đ
    console.log(numbers); // [1, 2, 3, 4]
    ```
 
-3. **Mảng hỗn hợp kiểu dữ liệu:**
-   ```javascript
-   const mixedArray = [42, "Hello", true, { name: "Alice" }];
-   console.log(mixedArray); // [42, "Hello", true, { name: "Alice" }]
-   ```
-
-4. **Sử dụng `new Array()`:**
+3. **Sử dụng `new Array()`:**
    ```javascript
    const array = new Array(5); // Tạo một mảng rỗng với độ dài 5
    console.log(array); // [ <5 empty items> ]
    ```
 
-### **Các thao tác cơ bản trên mảng**
+### 🔥**Các thao tác cơ bản trên mảng**
 
 1. **Truy cập phần tử:**
    ```javascript
@@ -98,14 +95,14 @@ Mảng (Array) trong JavaScript là một đối tượng đặc biệt dùng đ
      ```
 ---
 
-## **Mảng trong TypeScript** 
+## 💛**Mảng trong TypeScript** 
 
-### **Khái niệm**
+### 🔥**Khái niệm**
 
 Mảng (Array) trong TypeScript là một kiểu dữ liệu cho phép lưu trữ nhiều giá trị cùng kiểu trong một danh sách có thứ tự. TypeScript cung cấp khả năng xác định kiểu dữ liệu của các phần tử trong mảng, giúp kiểm soát chặt chẽ hơn so với JavaScript.
 
 
-### **Đặc điểm của mảng trong TypeScript**
+### 🔥**Đặc điểm của mảng trong TypeScript**
 
 1. **Chỉ chứa các phần tử cùng kiểu:** 
    - Bạn có thể khai báo kiểu của mảng, ví dụ: `number[]` chỉ chứa các số.
@@ -119,7 +116,7 @@ Mảng (Array) trong TypeScript là một kiểu dữ liệu cho phép lưu tr�
 
 ---
 
-### **Khai báo và khởi tạo mảng**
+### 🔥**Khai báo và khởi tạo mảng**
 
 TypeScript cung cấp hai cú pháp chính để khai báo mảng:
 
@@ -150,15 +147,15 @@ TypeScript cung cấp hai cú pháp chính để khai báo mảng:
 ---
 
 
-## **Tuples trong TypeScript**  
+## 💛**Tuples trong TypeScript**  
 
-### **Khái niệm**
+### 🔥**Khái niệm**
 Tuples (bộ giá trị) trong TypeScript là một kiểu dữ liệu đặc biệt, cho phép lưu trữ một tập hợp các giá trị với số lượng cố định và mỗi giá trị có thể thuộc các kiểu dữ liệu khác nhau.  
 Tuples thường được sử dụng để nhóm các giá trị có liên quan nhưng khác kiểu dữ liệu, ví dụ như một cặp giá trị (tên, tuổi) hoặc bộ ba giá trị (id, tên, trạng thái).
 
 ---
 
-### **Khai báo Tuples**
+### 🔥**Khai báo Tuples**
 
 1. **Cú pháp cơ bản:**
    ```typescript
@@ -182,7 +179,7 @@ Tuples thường được sử dụng để nhóm các giá trị có liên quan
 
 ---
 
-### **Các thao tác cơ bản với Tuples**
+### 🔥**Các thao tác cơ bản với Tuples**
 
 #### **Truy cập phần tử:**
 Tuples hỗ trợ truy cập phần tử bằng chỉ số (index-based), bắt đầu từ `0`.
@@ -212,7 +209,7 @@ Tuy nhiên, bạn nên hạn chế sử dụng cách này vì nó có thể phá
 
 ---
 
-### **Các tình huống sử dụng Tuples**
+### 🔥**Các tình huống sử dụng Tuples**
 
 #### 1. **Nhóm các giá trị liên quan khác kiểu:**
 Tuples rất hữu ích để nhóm các giá trị thuộc các kiểu khác nhau nhưng có mối liên hệ:
@@ -245,7 +242,7 @@ logEvent(['Login', new Date()]);
 
 ---
 
-### **Tuples với Tuỳ chọn (`Optional`)**
+### 🔥**Tuples với Tuỳ chọn (`Optional`)**
 Bạn có thể sử dụng dấu `?` để định nghĩa các phần tử tuỳ chọn trong Tuples:
 ```typescript
 let user: [string, number?];
@@ -255,7 +252,7 @@ console.log(user); // ['Alice']
 
 ---
 
-### **Tuples với Rest Parameters**
+### 🔥**Tuples với Rest Parameters**
 Tuples hỗ trợ sử dụng dấu `...` (Rest Parameters) để định nghĩa một số lượng phần tử không cố định nhưng cùng kiểu.
 ```typescript
 let scores: [string, ...number[]]; // Tên và danh sách điểm số
@@ -265,7 +262,7 @@ console.log(scores); // ['Alice', 85, 90, 95]
 
 ---
 
-### **Ví dụ thực tế**
+### 🔥**Ví dụ thực tế**
 
 #### **Khai báo Tuples để lưu dữ liệu nhân viên:**
 ```typescript
@@ -295,7 +292,7 @@ logScores('Alice', 85, 90, 95);
 
 ---
 
-### **Khi nào sử dụng Tuples trong TypeScript**
+### 🔥**Khi nào sử dụng Tuples trong TypeScript**
 - Khi cần nhóm các giá trị có liên quan nhưng khác kiểu dữ liệu.
 - Khi muốn đảm bảo thứ tự và kiểu của các giá trị được lưu trữ.
 - Khi cần trả về hoặc nhận nhiều giá trị trong một hàm mà thứ tự và kiểu của chúng rõ ràng. 
@@ -305,19 +302,19 @@ Tuples giúp mã TypeScript dễ đọc hơn, an toàn hơn và phù hợp với
 ---
 
 
-## **Vòng lặp** 
+## 💛**Vòng lặp** 
 
-### **Vòng lặp là gì?**
+### 🔥**Vòng lặp là gì?**
 
 Vòng lặp (loop) là một cấu trúc điều khiển trong lập trình cho phép một đoạn mã được thực thi nhiều lần. Điều này giúp tránh phải viết lại mã lặp đi lặp lại. Vòng lặp tiếp tục thực thi các lệnh cho đến khi điều kiện cho trước không còn đúng. Vòng lặp rất hữu ích trong nhiều tình huống như duyệt qua các phần tử của mảng, thực hiện tính toán lặp đi lặp lại, v.v.
 
-### **Lí do vì sao cần sử dụng vòng lặp**
+### 🔥**Lí do vì sao cần sử dụng vòng lặp**
 
 - **Tiết kiệm thời gian và công sức:** Thay vì phải viết mã lặp lại nhiều lần cho các thao tác tương tự, vòng lặp giúp tự động hoá và rút ngắn mã nguồn.
 - **Duyệt qua các tập dữ liệu lớn:** Trong các ứng dụng xử lý dữ liệu lớn (như mảng hoặc danh sách), vòng lặp giúp duyệt qua tất cả các phần tử một cách hiệu quả.
 - **Tự động hoá các phép toán lặp đi lặp lại:** Với vòng lặp, các phép toán như cộng dồn, tính toán trung bình, kiểm tra điều kiện, v.v. có thể thực hiện dễ dàng.
 
-### **Các loại vòng lặp trong JavaScript**
+### 🔥**Các loại vòng lặp trong JavaScript**
 
 JavaScript hỗ trợ nhiều loại vòng lặp, mỗi loại có cách sử dụng và mục đích khác nhau:
 
@@ -428,7 +425,7 @@ JavaScript hỗ trợ nhiều loại vòng lặp, mỗi loại có cách sử d�
 
 ---
 
-### **Khi nào sử dụng các loại vòng lặp**
+### 🔥**Khi nào sử dụng các loại vòng lặp**
 
 - **Vòng lặp `for`:** Dùng khi bạn biết trước số lần cần lặp hoặc khi cần truy cập phần tử theo chỉ số trong mảng.
 - **Vòng lặp `while`:** Sử dụng khi bạn không biết trước số lần lặp và chỉ biết điều kiện để dừng vòng lặp.
@@ -438,7 +435,7 @@ JavaScript hỗ trợ nhiều loại vòng lặp, mỗi loại có cách sử d�
 
 ---
 
-### **Ví dụ minh họa**
+### 🔥**Ví dụ minh họa**
 
 1. **Duyệt mảng với `for`:**
    ```javascript
@@ -476,13 +473,13 @@ JavaScript hỗ trợ nhiều loại vòng lặp, mỗi loại có cách sử d�
 
 ---
 
-## **`Break` và `Continute`** 
+## 💛**`Break` và `Continute`** 
 
 Cả `break` và `continue` là các câu lệnh điều khiển luồng trong JavaScript, được sử dụng trong vòng lặp (loop) hoặc trong các câu lệnh điều kiện. Chúng giúp thay đổi hành vi của vòng lặp theo cách nhất định.
 
 ---
 
-### **Câu lệnh `break`**
+### 🔥**Câu lệnh `break`**
 
 Câu lệnh `break` được sử dụng để thoát khỏi vòng lặp hoặc câu lệnh switch trước khi điều kiện dừng vòng lặp được thỏa mãn. Khi `break` được gặp trong vòng lặp, chương trình sẽ ngay lập tức rời khỏi vòng lặp, bất kể vòng lặp đó còn bao nhiêu lần nữa.
 
@@ -510,7 +507,7 @@ Trong ví dụ trên, khi giá trị của `numbers[i]` bằng 5, câu lệnh `b
 
 ---
 
-### **Câu lệnh `continue`**
+### 🔥**Câu lệnh `continue`**
 
 Câu lệnh `continue` được sử dụng để bỏ qua phần còn lại của vòng lặp hiện tại và chuyển sang lần lặp tiếp theo. Khi `continue` được gặp trong vòng lặp, phần mã còn lại của vòng lặp trong lần lặp hiện tại sẽ bị bỏ qua, và vòng lặp sẽ tiếp tục với giá trị tiếp theo.
 
@@ -538,7 +535,7 @@ Trong ví dụ trên, khi gặp một số chẵn (`numbers[i] % 2 === 0`), câu
 
 ---
 
-### **Tóm tắt sự khác nhau giữa `break` và `continue`**
+### 🔥**Tóm tắt sự khác nhau giữa `break` và `continue`**
 
 | Câu lệnh       | Chức năng                                                       | Khi nào sử dụng                             |
 |----------------|-----------------------------------------------------------------|--------------------------------------------|
@@ -548,15 +545,13 @@ Trong ví dụ trên, khi gặp một số chẵn (`numbers[i] % 2 === 0`), câu
 
 ---
 
-## **Các phương thức xử lý mảng** 
-
-### **Các phương thức xử lý mảng trong JavaScript**
+## 💛**Các phương thức xử lý mảng** 
 
 JavaScript cung cấp nhiều phương thức hữu ích để thao tác với mảng, giúp chúng ta thực hiện các thao tác như thêm, xóa, tìm kiếm, và biến đổi các phần tử trong mảng. Dưới đây là một số phương thức xử lý mảng thường sử dụng trong JavaScript, cùng với giải thích và ví dụ minh họa.
 
 ---
 
-### 1. **`push()`**
+### 🔥1. **`push()`**
 Phương thức `push()` thêm một hoặc nhiều phần tử vào cuối mảng và trả về độ dài mới của mảng.
 
 #### **Cú pháp:**
@@ -573,7 +568,7 @@ console.log(fruits); // ['Apple', 'Banana', 'Cherry']
 
 ---
 
-### 2. **`pop()`**
+### 🔥2. **`pop()`**
 Phương thức `pop()` loại bỏ phần tử cuối cùng khỏi mảng và trả về phần tử đã bị xóa.
 
 #### **Cú pháp:**
@@ -591,7 +586,7 @@ console.log(removedFruit); // 'Cherry'
 
 ---
 
-### 3. **`shift()`**
+### 🔥3. **`shift()`**
 Phương thức `shift()` loại bỏ phần tử đầu tiên khỏi mảng và trả về phần tử đã bị xóa.
 
 #### **Cú pháp:**
@@ -609,7 +604,7 @@ console.log(removedFruit); // 'Apple'
 
 ---
 
-### 4. **`unshift()`**
+### 🔥4. **`unshift()`**
 Phương thức `unshift()` thêm một hoặc nhiều phần tử vào đầu mảng và trả về độ dài mới của mảng.
 
 #### **Cú pháp:**
@@ -626,7 +621,7 @@ console.log(fruits); // ['Apple', 'Banana', 'Cherry']
 
 ---
 
-### 5. **`forEach()`**
+### 🔥5. **`forEach()`**
 Phương thức `forEach()` được sử dụng để duyệt qua từng phần tử trong mảng và thực thi một hàm cho mỗi phần tử.
 
 #### **Cú pháp:**
@@ -650,7 +645,7 @@ fruits.forEach((fruit, index) => {
 
 ---
 
-### 6. **`map()`**
+### 🔥6. **`map()`**
 Phương thức `map()` tạo ra một mảng mới với các phần tử đã được biến đổi từ mảng cũ, thông qua một hàm.
 
 #### **Cú pháp:**
@@ -669,7 +664,7 @@ console.log(doubledNumbers); // [2, 4, 6, 8]
 
 ---
 
-### 7. **`filter()`**
+### 🔥7. **`filter()`**
 Phương thức `filter()` tạo ra một mảng mới chứa các phần tử thỏa mãn điều kiện trong hàm callback.
 
 #### **Cú pháp:**
@@ -688,7 +683,7 @@ console.log(evenNumbers); // [2, 4]
 
 ---
 
-### 8. **`find()`**
+### 🔥8. **`find()`**
 Phương thức `find()` trả về phần tử đầu tiên trong mảng thỏa mãn điều kiện. Nếu không tìm thấy, trả về `undefined`.
 
 #### **Cú pháp:**
@@ -707,7 +702,7 @@ console.log(foundNumber); // 4
 
 ---
 
-### 9. **`includes()`**
+### 🔥9. **`includes()`**
 Phương thức `includes()` kiểm tra xem một phần tử có tồn tại trong mảng hay không. Trả về `true` nếu có, và `false` nếu không.
 
 #### **Cú pháp:**
@@ -724,7 +719,7 @@ console.log(fruits.includes('Mango'));  // false
 
 ---
 
-### 10. **`reduce()`**
+### 🔥10. **`reduce()`**
 Phương thức `reduce()` áp dụng một hàm vào từng phần tử của mảng để giảm mảng xuống một giá trị duy nhất (ví dụ: tổng, tích, chuỗi, v.v.).
 
 #### **Cú pháp:**
@@ -743,7 +738,7 @@ console.log(sum); // 10
 
 ---
 
-### 11. **`sort()`**
+### 🔥11. **`sort()`**
 Phương thức `sort()` dùng để sắp xếp mảng theo thứ tự tăng dần hoặc giảm dần. Mặc định, `sort()` sẽ sắp xếp các phần tử dưới dạng chuỗi.
 
 #### **Cú pháp:**
@@ -760,7 +755,7 @@ console.log(numbers); // [1, 1, 3, 4, 5, 9]
 
 ---
 
-### **Tóm tắt các phương thức**
+### 🔥**Tóm tắt các phương thức**
 
 | Phương thức  | Mô tả                                                          | Ví dụ                                                             |
 |--------------|----------------------------------------------------------------|-------------------------------------------------------------------|

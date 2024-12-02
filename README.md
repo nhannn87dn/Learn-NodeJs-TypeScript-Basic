@@ -58,9 +58,6 @@
 
 ---
 
-
-
-
 ## Buổi 4: Cấu trúc điều khiển
 
 **Mục tiêu:** Hiểu và sử dụng các cấu trúc điều khiển rẽ nhánh để xử lý logic trong chương trình.  
@@ -172,9 +169,9 @@
 
 ---
 
-## Buổi 8: JSON và Error handling
+## Buổi 8: Buổi 8: Error handling và Tác vụ bất đồng bộ
 
-**Mục tiêu:** Làm quen với cách làm việc với JSON trong TypeScript và Node.js, đồng thời xử lý lỗi hiệu quả trong ứng dụng.  
+**Mục tiêu:** Biết cách xử lý các lỗi xảy ra trong quá trình phát triển ứng dụng, hiểu và áp dụng được quy trình xử lý một tác vụ bất động bộ trong Javascript.  
 
 1. **Error Handling trong TypeScript**  
    - **Các loại lỗi phổ biến:**  
